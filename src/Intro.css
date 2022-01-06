@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap');
+
+.introDiv{
+	height:100vmin;
+	width:99vmin;
+	overflow: hidden;
+	font-family: 'Ubuntu', sans-serif;
+	position: absolute;
+	top: calc((100vh - 100vmin) / 2);
+	border: 0px solid white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	
+}
+.introDiv >div > *{
+	margin: 0;
+	padding: 0;
+	border: ;
+	font-weight: 700;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.introDiv > div{
+	margin:5vmin auto 0 auto;
+}
+.helloDiv{
+	height: 5vmin ;
+    display: flex;
+	justify-content: center;
+	align-items:flex-end;
+	border: 0px solid white;
+	color:#20bb45;
+	font-size: 3.5vmin;
+	font-weight: 300;
+}
+
+.name{
+	height: 9vmin;
+	width: 100vmin;
+	display: flex;
+	justify-content: center;
+	align-items:flex-start;
+	color: white;
+	font-size: 9vmin;
+	font-weight: 700;
+}
+
+.job{
+	color: #20bb45;
+	height: 4vmin;
+	font-size: 4vmin;
+	font-weight: 700;
+}
+.list{
+	color: white;
+	height:5vmin;
+	font-size: 3vmin;
+	font-weight: 400;
+	list-style: none;
+	
+}
+.list > li{
+	margin: 0 10px 0 10px;
+}
+
+.btnDiv{
+	height: 8vmin;
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	margin-top: 40px;
+}
+.btnDiv > button{
+	height: 8vmin;
+	width: 20vmin;
+	border: 2px solid #20bb45;
+	margin: 0 20px ;
+	color: white;
+	font-size: 2.8vmin;
+	font-weight: 500;
+	border-radius: 6px;
+}
+.greenOne{
+	background:#20bb45;
+}
+.nobg{
+	background: transparent;
+}
+.followDiv{
+	height: 10vmin;
+	width: 60vmin;
+	margin :0 auto;
+	border: 0px solid white;
+	
+}
+.decoDiv{
+	width:25vmin ;
+	height: 0.5vmin;
+	background: white;
+}
+.decoMid{
+	height: 8vmin;
+	min-width: 20vmin;
+	width: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	background:#1d293a;
+	border-radius: 8px;
+	font-size: 3.5vmin;
+	
+}
+
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
