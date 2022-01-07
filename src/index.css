@@ -6,13 +6,4 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.navBar{
-    position: fixed;
-    top: 0;
-    z-index: 3;
-    height: 8vh;
-    width: 100vw;
-background-color:#111a28;
-border: 0px solid;
-    
-}
+

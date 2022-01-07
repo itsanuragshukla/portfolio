@@ -1,0 +1,28 @@
+.followDiv{
+	height: 10vmin;
+	width: 60vmin;
+	margin :0 auto;
+	padding: 0;
+	font-weight: 700;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.decoDiv{
+	width:25vmin ;
+	height: 0.5vmin;
+	background: white;
+}
+.decoMid{
+	height: 8vmin;
+	min-width: 20vmin;
+	width: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	background:#1d293a;
+	border-radius: 8px;
+	font-size: 3.5vmin;
+	
+}

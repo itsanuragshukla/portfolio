@@ -1,5 +1,10 @@
 import React from 'react'
 import './Intro.css'
+import PageHeading from './PageHeading'
+import ButtonFilled from './ButtonFilled'
+import ButtonHollow from './ButtonHollow'
+import FollowIcons from './FollowIcons'
+
 class Intro extends React.Component {
 	constructor(props) {
 		super()
@@ -26,19 +31,12 @@ Hello! I am
 				</ul>
 			</div>
 			<div className="btnDiv">
-			<button className="greenOne">Contact Me</button>
-			<button className="nobg" onClick={this.aboutMe}>About Me</button>
+			<ButtonFilled text="Contact Me" />
+			<ButtonHollow text="About me" onClick={this.aboutMe} />
 			</div>
 			<div>
-			<div className="followDiv">
-			<div className="decoDiv"></div>
-			<div className="decoDiv decoMid">
-Follow Me
-				</div>
-			<div className="decoDiv"></div>
-				</div>
-			<div>
-				</div>
+			<PageHeading text="Follow Me" />
+			<FollowIcons />
 			</div>
 			</div>
 		)

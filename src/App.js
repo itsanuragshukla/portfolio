@@ -1,10 +1,8 @@
 import React from 'react'
-import logo from './img/logo.png';
 import './App.css';
-import Ham from './HamBurger'
 import Page2 from './Page2'
 import Intro from './Intro'
-
+import NavBar from './NavBar'
 class App extends React.Component {
 
 	constructor(props) {
@@ -18,13 +16,11 @@ class App extends React.Component {
 	render() {
 		return (
 			<div>
-     <div className="navBar">
-        <Ham />
-			</div>
+   <NavBar />
     <div className="App">
     <header className="App-header">
     		<Intro />
-				</header>
+			</header>
 			<Page2 />
 			</div>
 			</div>

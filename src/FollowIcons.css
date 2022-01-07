@@ -1,0 +1,33 @@
+.followIcons{
+	width: 60vmin;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	
+}
+
+.linkdin{
+	background:url("img/linkedin.svg");
+}
+.instagram{
+	background: url("img/instagram.svg");
+}
+.twitter{
+	background: url("img/twitter.svg");
+}
+.github{
+	background: url("img/github.svg");
+}
+.telegram{
+	background: url("img/telegram.svg");
+}
+.socialIcons{
+	height: 5vmin;
+	width: 5vmin;
+	background-repeat: no-repeat;
+	background-size: cover;
+	filter: invert(1);
+	margin: 2vmin;
+}

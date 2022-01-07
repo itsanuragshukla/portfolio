@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap');
-
 .introDiv{
 	height:100vmin;
 	width:99vmin;
@@ -7,7 +6,6 @@
 	font-family: 'Ubuntu', sans-serif;
 	position: absolute;
 	top: calc((100vh - 100vmin) / 2);
-	border: 0px solid white;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -17,7 +15,6 @@
 .introDiv >div > *{
 	margin: 0;
 	padding: 0;
-	border: ;
 	font-weight: 700;
 	display: flex;
 	justify-content: center;
@@ -31,7 +28,6 @@
     display: flex;
 	justify-content: center;
 	align-items:flex-end;
-	border: 0px solid white;
 	color:#20bb45;
 	font-size: 3.5vmin;
 	font-weight: 300;
@@ -73,47 +69,7 @@
 	margin: auto;
 	margin-top: 40px;
 }
-.btnDiv > button{
-	height: 8vmin;
-	width: 20vmin;
-	border: 2px solid #20bb45;
-	margin: 0 20px ;
-	color: white;
-	font-size: 2.8vmin;
-	font-weight: 500;
-	border-radius: 6px;
-}
-.greenOne{
-	background:#20bb45;
-}
-.nobg{
-	background: transparent;
-}
-.followDiv{
-	height: 10vmin;
-	width: 60vmin;
-	margin :0 auto;
-	border: 0px solid white;
-	
-}
-.decoDiv{
-	width:25vmin ;
-	height: 0.5vmin;
-	background: white;
-}
-.decoMid{
-	height: 8vmin;
-	min-width: 20vmin;
-	width: auto;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: white;
-	background:#1d293a;
-	border-radius: 8px;
-	font-size: 3.5vmin;
-	
-}
+
 
 @media only screen and (max-width: 600px) {
 }
