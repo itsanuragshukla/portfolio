@@ -4,6 +4,12 @@
     z-index: 3;
     height: 8vh;
     width: 100vw;
-background-color:#111a28;
-background-color: transparent;
+    transition: top 0.3s;
+background-color:#1d293a;
+display: flex;
+align-items: center;
+}
+
+.navbar-hidden {
+  top: -8vh;
 }

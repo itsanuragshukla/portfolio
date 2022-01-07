@@ -9,7 +9,9 @@ class Page2 extends React.Component {
 	render() {
 		return (
 			<div id='page2' className="Page2Main">
+			<div className="HeadingPage2">
 			<PageHeading text="About Me" />
+			</div>
 			</div>
 		)
 	}

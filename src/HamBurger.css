@@ -6,7 +6,7 @@
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  border: 0px solid;
+  border: 0px solid red;
   height: 5vh;
   position: absolute;
   z-index: 3;
@@ -47,15 +47,14 @@
 }
 
 .hamDiv{
-	border: 0px solid white;
 	height: 5vh;
 	width: 5vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	position: absolute;
-	top: 3vh;
+	position: relative;
 	left: 3vh;
 	  background: #20bb45;
   border-radius: 5px;
+  border: 0px soid red;
 }

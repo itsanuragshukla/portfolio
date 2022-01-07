@@ -3,3 +3,11 @@
 	width: 100vw;
 	background: #111a28;
 }
+.HeadingPage2{
+	width: 100vw;
+	height: 15vh;
+	border: 0px solid red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

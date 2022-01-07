@@ -1,46 +1,52 @@
-import React from 'react'
+import React, {
+	Component
+} from 'react'
 import './NavBar.css'
 import Ham from './HamBurger'
 
 class NavBar extends React.Component {
-	comstructor(props) {
+	constructor(props) {
+		super()
 		this.state = {
 			prevScrollpos: window.pageYOffset,
-			visible: true
+			visible: true,
 		}
-		this.handleScroll = this.handleScroll.bind(this)
+		this.handleScroll = this.handleScroll.bind(this);
 	}
 
 	// Adds an event listener when the component is mount.
 	componentDidMount() {
-	//	window.addEventListener("scroll", this.handleScroll);
+		window.addEventListener("scroll", this.handleScroll);
 	}
 
 	// Remove the event listener when the component is unmount.
 	componentWillUnmount() {
-//		window.removeEventListener("scroll", this.handleScroll);
+		window.removeEventListener("scroll", this.handleScroll);
 	}
 
 	// Hide or show the menu.
-	handleScroll() {
-		const {
-			prevScrollpos
-		} = this.state;
-
-		const currentScrollPos = window.pageYOffset;
-		const visible = prevScrollpos > currentScrollPos;
+	handleScroll () {
+		const prevScroll = this.state.prevScrollpos;
+		//	console.log(this.state);
+		const currPos = window.pageYOffset;
+		const visibl = prevScroll > currPos;
 
 		this.setState({
-			prevScrollpos: currentScrollPos,
-			visible
+			prevScrollpos: currPos,
+			visible: visibl
 		})
+		if (this.state.visible) {
+			document.getElementById('nav').classList.remove("navbar-hidden");
+		} else {
+			document.getElementById("nav").classList.add('navbar-hidden');
+		}
 	}
 
 
 	render() {
 
 		return(
-			<div className="navBar">
+			<div id="nav" className="navBar">
         <Ham />
 			</div>
 		)
