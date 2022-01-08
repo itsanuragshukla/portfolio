@@ -1,13 +1,10 @@
-.btnDiv > button{
+.nobg{
 	height: 8vmin;
 	width: 20vmin;
 	border: 2px solid #20bb45;
-	margin: 0 20px ;
 	color: white;
 	font-size: 2.8vmin;
-	font-weight: 500;
+	font-weight: 700;
 	border-radius: 6px;
-}
-.nobg{
 	background: transparent;
 }

@@ -7,7 +7,7 @@ class ButtonHollow extends React.Component {
 	}
 	render() {
 		return (
-			<button className="nobg" data-scrollToId={this.props.scrollToId} onClick={this.props.onClick} >{this.props.text}</button>
+			<button className="nobg" data-scrollto={this.props.scrollto} onClick={this.props.onClick}>{this.props.text}</button>
 		)
 	}
 }

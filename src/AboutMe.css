@@ -1,14 +1,14 @@
 .AboutMe{
 	position: relative;
-	height: 100vh;
+	height: 90vh;
 	width: 100vw;
 	background: #111a28;
 	display: flex;
 	flex-direction: column;
 }
 .MainAboutMe{
-	height: 100vmin;
-	width: 100vmin;
+	height: 70vh;
+	width: 100vw;
 	border: 0px solid red;
 	margin: 0;
 	position: absolute;
@@ -25,6 +25,28 @@
 	border: 0px solid red;
 }
 .imgAboutMe{
+	width: 40vmin;
+	height: 40vmin;
+	margin: 0 auto;
+	border: 1px solid white;
+	border-radius: 6px;
+	background: url(./img/img.jpg) ;
+	background-size: 100% 100%;
+	transition-duration: 0.5s;
+	-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+.imgAboutMe:hover{
+	-webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    transform:scale(1.1);
+}
+.textAboutMe{
 	width: 100vw;
-	height: 25vh;
+	height: calc(70vh - 40vmin);
+	border: 0px solid white;
+	color: white;
+	margin-top: 50px;
+	font-size: 3vmin;
+	font-weight: 300;
 }

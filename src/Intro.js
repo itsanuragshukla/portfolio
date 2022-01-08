@@ -8,10 +8,6 @@ import FollowIcons from './FollowIcons'
 class Intro extends React.Component {
 	constructor(props) {
 		super()
-		this.scrollToSection = this.scrollToSection.bind(this);
-	}
-	scrollToSection(e) {
-		window.scrollTo(0, document.getElementById(e.target.getAttribute("data-scrollToId")).offsetTop)
 	}
 	render() {
 		return (
@@ -31,8 +27,8 @@ Hello! I am
 				</ul>
 			</div>
 			<div className="btnDiv">
-			<ButtonFilled text="Contact Me" scrollToId="ContactMe" onClick={this.scrollToSection} />
-			<ButtonHollow text="About me" scrollToId="AboutMe" onClick={this.scrollToSection} />
+			<ButtonFilled text="Contact Me" scrollto="ContactMe" onClick={this.props.scrollToSection} />
+		<ButtonHollow text="About me" scrollto="AboutMe" onClick={this.props.scrollToSection} />
 			</div>
 			<div>
 			<PageHeading text="Follow Me" />

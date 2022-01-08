@@ -11,8 +11,12 @@ class App extends React.Component {
 		this.state = {
 			visible: true,
 		}
+		this.scrollToSection = this.scrollToSection.bind(this);
 	}
 
+	scrollToSection(e) {
+		window.scrollTo(0, document.getElementById(e.target.getAttribute("data-scrollto")).offsetTop)
+	}
 
 	render() {
 		return (
@@ -20,10 +24,10 @@ class App extends React.Component {
    <NavBar />
     <div className="App">
     <header className="App-header">
-    		<Intro />
+    		<Intro scrollToSection={this.scrollToSection} />
 			</header>
-			<AboutMe />
-			<ContactMe/>
+			<AboutMe scrollToSection={this.scrollToSection}/>
+			<ContactMe />
 			</div>
 			</div>
 		);
