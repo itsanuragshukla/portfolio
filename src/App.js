@@ -21,13 +21,14 @@ class App extends React.Component {
 	render() {
 		return (
 			<div>
-   <NavBar />
-    <div className="App">
-    <header className="App-header">
-    		<Intro scrollToSection={this.scrollToSection} />
+				<NavBar />
+				<div className="App">
+    				<header className="App-header">
+    					<Intro scrollToSection={this.scrollToSection} />
 			</header>
-			<AboutMe scrollToSection={this.scrollToSection}/>
-			<ContactMe />
+					
+					<AboutMe scrollToSection={this.scrollToSection} />
+		
 			</div>
 			</div>
 		);

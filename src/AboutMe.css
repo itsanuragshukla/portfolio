@@ -1,19 +1,11 @@
 .AboutMe{
-	position: relative;
-	min-height: 90vh;
-	height:auto;
+	height: auto;
 	width: 100vw;
 	background: #111a28;
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	flex-direction: column;
-}
-.MainAboutMe{
-	height: 70vh;
-	width: 100vw;
-	border: 0px solid red;
-	margin: 0;
-	position: absolute;
-	top: 10vh;
 }
 .HeadingAboutMe{
 	width: 100vw;
@@ -21,13 +13,19 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	position: absolute;
-	top: 0;
 	border: 0px solid red;
 }
+.MainAboutMe{
+	height: auto;
+	width: 100vw;
+	border: 0px solid red;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 .imgAboutMe{
-	width: 40vmin;
-	height: 40vmin;
+	width: 40vw;
+	height: 40vw;
 	margin: 0 auto;
 	border: 1px solid white;
 	border-radius: 6px;
@@ -36,6 +34,8 @@
 	transition-duration: 0.5s;
 	-webkit-filter: grayscale(100%);
     filter: grayscale(100%);
+    display: flex;
+    flex-shrink: 0;
 }
 .imgAboutMe:hover{
 	-webkit-filter: grayscale(0);
@@ -43,11 +43,24 @@
     transform:scale(1.1);
 }
 .textAboutMe{
-	width: 100vw;
-	height: calc(70vh - 40vmin);
+	width: 90vw;
+	height: auto;
 	border: 0px solid white;
 	color: white;
-	margin-top: 50px;
-	font-size: 3vmin;
+	margin: 5vh auto 0 auto;
+	font-size: 1rem;
 	font-weight: 300;
+}
+.btnDivAboutMe{
+	height: 8vh;
+	width: 100vw;
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	border: 0px solid white;
+	margin: 5vh auto 5vh auto;
+	background:;
+}
+.btnDivAboutMe>button{
+	margin: 0 20px;
 }

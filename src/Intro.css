@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap');
 .introDiv{
 	height:100vmin;
-	width:99vmin;
+	width:100vmin;
 	overflow: hidden;
 	font-family: 'Ubuntu', sans-serif;
 	position: absolute;
