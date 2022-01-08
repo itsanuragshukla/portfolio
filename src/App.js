@@ -1,8 +1,9 @@
 import React from 'react'
 import './App.css';
-import Page2 from './Page2'
+import AboutMe from './AboutMe'
 import Intro from './Intro'
 import NavBar from './NavBar'
+import ContactMe from './ContactMe'
 class App extends React.Component {
 
 	constructor(props) {
@@ -21,7 +22,8 @@ class App extends React.Component {
     <header className="App-header">
     		<Intro />
 			</header>
-			<Page2 />
+			<AboutMe />
+			<ContactMe/>
 			</div>
 			</div>
 		);

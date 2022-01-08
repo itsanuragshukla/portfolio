@@ -1,0 +1,30 @@
+.AboutMe{
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+	background: #111a28;
+	display: flex;
+	flex-direction: column;
+}
+.MainAboutMe{
+	height: 100vmin;
+	width: 100vmin;
+	border: 0px solid red;
+	margin: 0;
+	position: absolute;
+	top: 10vh;
+}
+.HeadingAboutMe{
+	width: 100vw;
+	height: 10vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	border: 0px solid red;
+}
+.imgAboutMe{
+	width: 100vw;
+	height: 25vh;
+}

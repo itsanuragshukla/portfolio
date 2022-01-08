@@ -7,7 +7,7 @@ class ButtonFilled extends React.Component {
 	}
 	render() {
 		return (
-			<button className="greenOne" onClick={this.props.onClick}>{this.props.text}</button>
+			<button className="greenOne" data-scrollToId={this.props.scrollToId} onClick={this.props.onClick}>{this.props.text}</button>
 		)
 	}
 }
