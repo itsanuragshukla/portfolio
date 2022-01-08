@@ -1,6 +1,7 @@
 .AboutMe{
 	position: relative;
-	height: 90vh;
+	min-height: 90vh;
+	height:auto;
 	width: 100vw;
 	background: #111a28;
 	display: flex;
