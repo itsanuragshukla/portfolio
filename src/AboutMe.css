@@ -6,6 +6,7 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	border: 0px solid red;
 }
 .HeadingAboutMe{
 	width: 100vw;
@@ -13,7 +14,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border: 0px solid red;
+	border: 0px solid red;	
 }
 .MainAboutMe{
 	height: auto;
@@ -26,7 +27,7 @@
 .imgAboutMe{
 	width: 40vmin;
 	height: 40vmin;
-	margin: 0 auto;
+	margin: 4vmin auto;
 	border: 1px solid white;
 	border-radius: 6px;
 	background: url(./img/img.jpg) ;
@@ -48,7 +49,7 @@
 	border: 0px solid white;
 	color: white;
 	margin: 5vh auto 0 auto;
-	font-size: max(5vmin , 5vmin);
+	font-size: max(4vmin , 4vmin);
 	font-weight: 300;
 }
 .btnDivAboutMe{

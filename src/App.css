@@ -11,4 +11,5 @@
   font-size: calc(10px + 2vmin);
   color: #000;
   background-color: #111a28;
+  border: 0px solid red;
 }
