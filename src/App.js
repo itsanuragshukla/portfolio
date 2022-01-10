@@ -26,9 +26,8 @@ class App extends React.Component {
     				<header className="App-header">
     					<Intro scrollToSection={this.scrollToSection} />
 			</header>
-					
 					<AboutMe scrollToSection={this.scrollToSection} />
-		
+					<ContactMe scrollToSection={this.scrollToSection} />
 			</div>
 			</div>
 		);

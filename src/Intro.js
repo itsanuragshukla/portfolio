@@ -28,7 +28,7 @@ Hello! I am
 			</div>
 			<div className="btnDiv">
 			<ButtonFilled text="Contact Me" scrollto="ContactMe" onClick={this.props.scrollToSection} />
-		<ButtonHollow text="About me" scrollto="AboutMe" onClick={this.props.scrollToSection} />
+			<ButtonHollow text="About me" scrollto="AboutMe" onClick={this.props.scrollToSection} />
 			</div>
 			<div>
 			<PageHeading text="Follow Me" />

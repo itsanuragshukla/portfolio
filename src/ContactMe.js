@@ -13,7 +13,6 @@ class ContactMe extends React.Component {
 			<PageHeading text="Contact Me" />
 			</div>
 			<div className="MainContactMe">
-			<div className="imgContactMe"></div>
 			</div>
 			</div>
 		)
