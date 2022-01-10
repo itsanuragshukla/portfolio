@@ -17,15 +17,15 @@
 }
 .MainAboutMe{
 	height: auto;
-	width: 100vw;
+	width: max(80vw , 100vmin);
 	border: 0px solid red;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 .imgAboutMe{
-	width: 40vw;
-	height: 40vw;
+	width: 40vmin;
+	height: 40vmin;
 	margin: 0 auto;
 	border: 1px solid white;
 	border-radius: 6px;
@@ -43,22 +43,22 @@
     transform:scale(1.1);
 }
 .textAboutMe{
-	width: 90vw;
+	width: max(95vmin , 70vw);
 	height: auto;
 	border: 0px solid white;
 	color: white;
 	margin: 5vh auto 0 auto;
-	font-size: 1rem;
+	font-size: max(5vmin , 5vmin);
 	font-weight: 300;
 }
 .btnDivAboutMe{
 	height: 8vh;
-	width: 100vw;
+	width: 100vmin;
 	display: flex;
 	align-items:center;
 	justify-content: center;
 	border: 0px solid white;
-	margin: 5vh auto 5vh auto;
+	margin: 7vh auto 7vh auto;
 	background:;
 }
 .btnDivAboutMe>button{
