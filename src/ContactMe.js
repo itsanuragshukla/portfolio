@@ -1,5 +1,6 @@
 import React from 'react'
 import './ContactMe.css'
+import Form from './Form'
 import PageHeading from './PageHeading'
 class ContactMe extends React.Component {
 	constructor(props) {
@@ -13,6 +14,7 @@ class ContactMe extends React.Component {
 			<PageHeading text="Contact Me" />
 			</div>
 			<div className="MainContactMe">
+			<Form />
 			</div>
 			</div>
 		)
