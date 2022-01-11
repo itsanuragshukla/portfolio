@@ -10,6 +10,8 @@ class AboutMe extends React.Component {
 		this.state = {}
 	}
 	render() {
+		const dummyText = "Top Cat! The most effectual Top Cat! Who’s intellectual close friends get to call him T.C., providing it’s with dignity. Top Cat! The indisputable leader of the gang. He’s the boss, he’s a pip, he’s the championship. He’s the most tip top, Top Cat.";
+		const dummyText2 = "This is my boss, Jonathan Hart, a self-made millionaire, he’s quite a guy. This is Mrs H., she’s gorgeous, she’s one lady who knows how to take care of herself. By the way, my name is Max. I take care of both of them, which ain’t easy, ’cause when they met it was MURDER!";
 		return (
 			<div id='AboutMe' className="AboutMe">
 				<div className="HeadingAboutMe">
@@ -19,7 +21,7 @@ class AboutMe extends React.Component {
 					<div className="imgAboutMe">
 				</div>
 					<div className="textAboutMe">
-Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br /> Corporis maxime, odit quaerat laboriosam reiciendis saepe rem beatae commodi facilis quisquam laudantium, doloribus in! Mollitia corporis distinctio id repellendus similique autem enim maxime dignissimos, ducimus veritatis minima quas, magnam qui.<br /> Incidunt animi debitis corrupti dolorem sed inventore odit est reiciendis. Possimus eligendi asperiores unde iusto commodi tempore porro maxime deserunt laborum numquam quibusdam minus facere quas temporibus molestiae impedit architecto, totam, rem ipsa, aspernatur? Unde repellendus. 
+					{dummyText}<br/>{dummyText2}
 				</div>
 			</div>
 			<div className="btnDivAboutMe">

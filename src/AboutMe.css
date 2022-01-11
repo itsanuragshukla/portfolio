@@ -44,13 +44,20 @@
     transform:scale(1.1);
 }
 .textAboutMe{
-	width: max(98vmin , 80vw);
+	width: max(90vmin , 80vw);
 	height: auto;
 	border: 0px solid white;
 	color: white;
 	margin: 5vh auto 0 auto;
-	font-size: 4vmin;
+	font-size: max(1rem,3vmin);
+	line-height: 1.55;
 	font-weight: 300;
+	text-align: left;
+	word-wrap: break-word;
+  overflow-wrap: break-word;
+-webkit-hyphens: auto;
+   -moz-hyphens: auto;
+        hyphens: auto;
 }
 .btnDivAboutMe{
 	height: 8vh;

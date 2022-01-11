@@ -1,5 +1,9 @@
 html{
 	scroll-behavior: smooth;
+	font-size: 10px;
+}
+:root{
+	font-size: 16px;
 }
 *{
 	box-sizing: border-box;
