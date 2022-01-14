@@ -9,7 +9,6 @@
 	border: 0px solid white;
 	overflow:hidden;
 	height: auto;
-	padding-bottom: 8vh;
 }
 .HeadingMySkills{
 	width: 100vw;
@@ -31,7 +30,9 @@
 	margin: 30px auto 30px auto;
 	
 }
-
+.btnDivMySkills>button{
+	margin: 0 20px;
+}
 .MainMySkills{
 	width: 100vw;
 	border: 0px solid orange;

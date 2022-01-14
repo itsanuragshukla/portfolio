@@ -3,6 +3,7 @@ import './MySkills.css'
 import PageHeading from './PageHeading'
 import ProgrammingSkills from './ProgrammingSkills'
 import ButtonHollow from './ButtonHollow'
+import ButtonFilled from './ButtonFilled'
 import WebSkills from './WebSkills'
 import OtherSkills from './OtherSkills'
 
@@ -34,11 +35,11 @@ class MySkills extends React.Component {
 
 	render() {
 		return (
-		<div id='MySkills' className="MySkills">
+			<div id='MySkills' className="MySkills">
 			<div className="HeadingMySkills">
 				<PageHeading text="My Skills" />
 			</div>
-			<div className="btnDivAboutMe btnDivMySkills">
+			<div className=" btnDivMySkills">
 				<ButtonHollow fillBg={this.state.programming} text="Programming" label="programming" onClick={this.toggleSection} />
 				<ButtonHollow fillBg={this.state.web} text="WEB" label="web" onClick={this.toggleSection} />
 				<ButtonHollow fillBg={this.state.other} text="Other" label="other" onClick={this.toggleSection} />
@@ -48,6 +49,10 @@ class MySkills extends React.Component {
 					<ProgrammingSkills visible={this.state.programming} />
 					<WebSkills visible={this.state.web} />
 					<OtherSkills visible={this.state.other} />
+				</div>
+				<div className="btnDivAboutMe">
+			<ButtonFilled text="Contact Me" scrollto="ContactMe" onClick={this.props.scrollToSection} />
+			<ButtonHollow text="About me" scrollto="AboutMe" onClick={this.props.scrollToSection} />
 				</div>
 			</div>
 			</div>
