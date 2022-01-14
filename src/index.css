@@ -4,6 +4,7 @@ html{
 }
 :root{
 	font-size: 16px;
+	--skill-height:max(90px,8vh);
 }
 *{
 	box-sizing: border-box;

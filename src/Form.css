@@ -1,0 +1,17 @@
+.formMain{
+	height:max(100vmin,80vh);
+	width: 100vmin;
+	border: 2px solid white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.form>*>input{
+	display: block;
+	border: 2px solid red;
+	width: 80vmin;
+	min-height: 50px;
+	height: auto;
+	font-size:min(1.55rem , 3vmin) ;
+}

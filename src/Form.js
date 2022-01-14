@@ -1,16 +1,25 @@
 import React from 'react'
-
-class Form extends React.Component{
-	constructor(props){
+import './Form.css'
+class Form extends React.Component {
+	constructor(props) {
 		super()
-		this.state={
-
-		}
+		this.state = {}
 	}
 
-	render(){
+	render() {
 		return (
-			<h1>I'm a form</h1>
+			<div className="formMain">
+			<form className="form">
+			<fieldset>
+			<legend>Hello World</legend>
+			<input type="Text" name="name" placeholder="Enter your Name" />
+			<input type="Text" name="name" placeholder="Enter your Name" />
+			<input type="Text" name="name" placeholder="Enter your Name" />
+			</fieldset>
+			<button>Submit</button>
+
+			</form>
+			</div>
 		)
 	}
 }

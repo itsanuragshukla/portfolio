@@ -4,6 +4,8 @@ import AboutMe from './AboutMe'
 import Intro from './Intro'
 import NavBar from './NavBar'
 import ContactMe from './ContactMe'
+import MySkills from './MySkills'
+
 class App extends React.Component {
 
 	constructor(props) {
@@ -27,7 +29,9 @@ class App extends React.Component {
     					<Intro scrollToSection={this.scrollToSection} />
 			</header>
 					<AboutMe scrollToSection={this.scrollToSection} />
+					<MySkills scrollToSection={this.scrollToSection} />
 					<ContactMe scrollToSection={this.scrollToSection} />
+				
 			</div>
 			</div>
 		);

@@ -1,0 +1,15 @@
+.SkillMain{
+	position: relative;
+	color: #fff;
+}
+.skillInfo{
+	border: 0px solid red;
+	height: calc(var(--skill-height) - 15px);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+.skillInfo>*{
+	margin: 20px;
+}
