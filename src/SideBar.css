@@ -12,3 +12,9 @@
 	overflow: hidden;
 	color: white;
 }
+.hidden {
+  height: 0;
+}
+.visible{
+  height: 30vh;
+}

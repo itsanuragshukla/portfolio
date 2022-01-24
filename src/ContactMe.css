@@ -1,5 +1,5 @@
 .ContactMe{
-	min-height: 100vh;
+	min-height: 90vh;
 	width: 100vw;
 	height: auto;
 	background: #111a28;
@@ -8,14 +8,10 @@
 	position: relative;
 }
 .MainContactMe{
-	min-height: 90vh;
+	min-height: 80vh;
 	height: auto;
 	width: 100vw;
-	border: 0px solid red;
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	border: 2px solid red;
 
 }
 .HeadingContactMe{
