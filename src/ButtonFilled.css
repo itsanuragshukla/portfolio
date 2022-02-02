@@ -1,10 +1,18 @@
-.greenOne{
-	height: 8vmin;
-	width: 20vmin;
-	border: 2px solid #20bb45;
-	color: white;
-	font-size: 2.8vmin;
-	font-weight: 500;
-	border-radius: 6px;
-	background:#20bb45;
+.greenOne {
+    height: 50px;
+    min-width: 100px;
+    width: auto;
+    border: 2px solid #20bb45;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 6px;
+    background: #20bb45;
+    padding: 12px;
+    margin-top: 10px;
+}
+@media only screen and (max-width:768px) {
+    .greenOne {
+        font-size: 1rem;
+    }
 }

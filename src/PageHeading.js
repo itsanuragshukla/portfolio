@@ -7,12 +7,12 @@ class PageHeading extends React.Component{
 	}
 	render(){
 		return (
-						<div className="followDiv">
-			<div className="decoDiv"></div>
+			<div className="followDiv">
+			<div className="decoDiv decoLeft"></div>
 			<div className="decoDiv decoMid">
 			{this.props.text}
 				</div>
-			<div className="decoDiv"></div>
+			<div className="decoDiv decoRight"></div>
 				</div>
 			)
 	}

@@ -1,79 +1,94 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap');
-.introDiv{
-	height:100vmin;
-	width:100vmin;
-	overflow: hidden;
-	font-family: 'Ubuntu', sans-serif;
-	position: absolute;
-	top: calc((100vh - 100vmin) / 2);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	border:0px solid red ;
-	
-}
-.introDiv >div > *{
-	margin: 0;
-	padding: 0;
-	font-weight: 700;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.introDiv > div{
-	margin:5vmin auto 0 auto;
-}
-.helloDiv{
-	height: 5vmin ;
+.introDiv {
+    min-height: 100vmin;
+    width: 100vw;
+    overflow: hidden;
+    font-family: 'Ubuntu', sans-serif;
     display: flex;
-	justify-content: center;
-	align-items:flex-end;
-	color:#20bb45;
-	font-size: 3.5vmin;
-	font-weight: 300;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 0px solid red;
+
+}
+.introDiv >div > * {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+.introDiv > div {
+    margin: 15px auto 0 auto;
+    border: 0px solid red;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.helloDiv {
+    min-height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: #20bb45;
+    font-size: 1.1rem;
+    font-weight: 300;
 }
 
-.name{
-	height: 9vmin;
-	width: 100vmin;
-	display: flex;
-	justify-content: center;
-	align-items:flex-start;
-	color: white;
-	font-size: 9vmin;
-	font-weight: 700;
+.name {
+    height:auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    font-size: 3.2rem;
+    font-weight: 700;
+    
 }
 
-.job{
-	color: #20bb45;
-	height: 4vmin;
-	font-size: 4vmin;
-	font-weight: 700;
+.job {
+    color: #20bb45;
+    height: 40px;
+    font-size: 1.8rem;
+    font-weight: 700;
 }
-.list{
-	color: white;
-	height:5vmin;
-	font-size: 3vmin;
-	font-weight: 400;
-	list-style: none;
-	
+.list {
+    color: white;
+    height: auto;
+    font-size: 1.2rem;
+    font-weight: 400;
+    list-style: none;
+    max-width: 100%;
+
 }
-.list > li{
-	margin: 0 10px 0 10px;
+.list > li {
+    margin: 0 10px 0 10px;
 }
 
-.btnDiv{
-	height: 8vmin;
-	width: 100vmin;
-	display: flex;
-	align-items:center;
-	justify-content: center;
-	margin-top: 40px;
-	border: 0px solid red;
+.btnDiv,#btnDiv {
+    min-height: 60px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    border: 0px solid red;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+
 }
-.btnDiv>button{
-	margin: 0 20px;
+.btnDiv>button {
+    margin: 5px 20px;
+    padding: 12px;
 }
 
 
@@ -83,7 +98,20 @@
 @media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (max-width: 600px) {
+    .name {
+        font-size: 2rem;
+    }
+    .job {
+        font-size: 1.1rem;
+    }
+    .list {
+        font-size: 0.9rem;
+    }
+    #list {
+        flex-direction: column;
+    }
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {}

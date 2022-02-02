@@ -32,7 +32,7 @@ class Ham extends React.Component {
 	render() {
 		return (
 			<div>
-		<div className="hamDiv">
+		<div id="hamDiv" className="hamDiv">
 			<svg id='hamBar' className={this.state.clicked ? "ham hamRotate ham7 active": "ham hamRotate ham7"} viewBox="0 0 100 100" width="80" onClick={this.hamActive}>
 					<path
 				className="line top"

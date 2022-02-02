@@ -1,15 +1,27 @@
-.SkillMain{
-	position: relative;
-	color: #fff;
+.SkillMain {
+    position: relative;
+    color: #fff;
+    border: 0px solid red;
 }
-.skillInfo{
-	border: 0px solid red;
-	height: calc(var(--skill-height) - 15px);
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	
+.skillInfo {
+    border: 0px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    border: 0px solid white;
+    min-height: 90px;
+    background: #1d293a;
+    border-radius: 10px 10px 0 0;
+    margin-top: 20px;
+    font-size: 1rem;
 }
-.skillInfo>*{
-	margin: 20px;
+.skillInfo>* {
+    margin: 20px;
+}
+
+@media screen and (max-width:500px) {
+    .skillInfo {
+        font-size: 0.8rem;
+    }
 }

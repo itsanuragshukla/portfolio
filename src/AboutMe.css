@@ -1,73 +1,85 @@
-.AboutMe{
-	height: auto;
-	width: 100vw;
-	background: #111a28;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	border: 0px solid red;
+.AboutMe {
+    height: auto;
+    width: 100vw;
+    background: #111a28;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 0px solid red;
 }
-.HeadingAboutMe{
-	width: 100vw;
-	height: 10vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border: 0px solid red;	
+.HeadingAboutMe {
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid red;
+    margin-bottom: 40px;
 }
-.MainAboutMe{
-	height: auto;
-	width: max(80vw , 100vmin);
-	border: 0px solid red;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+.MainAboutMe {
+    height: auto;
+    width: max(80vw , 100vmin);
+    border: 0px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.imgAboutMe{
-	width: 40vmin;
-	height: 40vmin;
-	margin: 4vmin auto;
-	border: 1px solid white;
-	border-radius: 6px;
-	background: url(./img/img.jpg) ;
-	background-size: 100% 100%;
-	transition-duration: 0.5s;
-	-webkit-filter: grayscale(100%);
+.imgAboutMe {
+    min-width: 250px;
+    min-height: 250px;
+    margin: auto;
+    border: 1px solid white;
+    border-radius: 6px;
+    background: url(./img/img.jpg);
+    background-size: 100% 100%;
+    transition-duration: 0.5s;
+    -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     display: flex;
     flex-shrink: 0;
 }
-.imgAboutMe:hover{
-	-webkit-filter: grayscale(0);
+.imgAboutMe:hover {
+    -webkit-filter: grayscale(0);
     filter: grayscale(0);
-    transform:scale(1.1);
+    transform: scale(1.1);
 }
-.textAboutMe{
-	width: max(90vmin , 80vw);
-	height: auto;
-	border: 0px solid white;
-	color: white;
-	margin: 5vh auto 0 auto;
-	font-size: max(1rem,3vmin);
-	line-height: 1.55;
-	font-weight: 300;
-	text-align: left;
-	word-wrap: break-word;
-  overflow-wrap: break-word;
--webkit-hyphens: auto;
-   -moz-hyphens: auto;
-        hyphens: auto;
+.textAboutMe {
+    width: max(90vmin , 80vw);
+    height: auto;
+    border: 0px solid white;
+    color: white;
+    margin: 50px auto 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.55;
+    font-weight: 300;
+    text-align: left;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
 }
-.btnDivAboutMe{
-	height: 8vh;
-	width: 100vmin;
-	display: flex;
-	align-items:center;
-	justify-content: center;
-	border: 0px solid white;
-	margin: 7vh auto 7vh auto;
+.btnDivAboutMe {
+    min-height: 60px;
+    width: 100vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0px solid white;
+    margin: 7vh auto 7vh auto;
+    flex-wrap: wrap;
 }
-.btnDivAboutMe>button{
-	margin: 0 20px;
+.btnDivAboutMe>button {
+    margin: 10px;
+}
+
+@media only screen and (max-width:500px) {
+    #imgAboutMe {
+        min-width: 150px;
+        min-height: 150px;
+    }
+    .textAboutMe {
+        font-size: 1rem;
+    }
 }

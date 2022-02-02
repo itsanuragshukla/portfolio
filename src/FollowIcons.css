@@ -1,33 +1,47 @@
-.followIcons{
-	width: 60vmin;
-	height: auto;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	
-	
+.followIcons {
+    min-width: 60%;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
 }
 
-.linkdin{
-	background:url("img/linkedin.svg");
+.linkdin {
+    background: url("img/linkedin.svg");
 }
-.instagram{
-	background: url("img/instagram.svg");
+.instagram {
+    background: url("img/instagram.svg");
 }
-.twitter{
-	background: url("img/twitter.svg");
+.twitter {
+    background: url("img/twitter.svg");
 }
-.github{
-	background: url("img/github.svg");
+.github {
+    background: url("img/github.svg");
 }
-.telegram{
-	background: url("img/telegram.svg");
+.telegram {
+    background: url("img/telegram.svg");
 }
-.socialIcons{
-	height: 5vmin;
-	width: 5vmin;
-	background-repeat: no-repeat;
-	background-size: cover;
-	filter: invert(1);
-	margin: 2vmin;
+.socialIcons {
+    height: 40px;
+    width: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: invert(1);
+    margin: 10px;
+}
+
+@media screen and (max-width:600px) {
+    .socialIcons {
+        height: 30px;
+        width: 30px;
+    }
+}
+@media screen and (max-width:400px) {
+    .socialIcons {
+        height: 25px;
+        width: 25px;
+    }
 }

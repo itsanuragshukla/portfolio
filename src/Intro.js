@@ -6,37 +6,37 @@ import ButtonHollow from './ButtonHollow'
 import FollowIcons from './FollowIcons'
 
 class Intro extends React.Component {
-	constructor(props) {
-		super()
-	}
-	render() {
-		return (
-			<div className="introDiv">
+    constructor(props) {
+        super()
+    }
+    render() {
+        return (
+            <div className="introDiv">
 			<div>
 			<div className="helloDiv">
 Hello! I am
-			</div>
+            </div>
 				<h1 className="name">Anurag Shukla</h1>
-			</div>
+            </div>
 				<div>
 				<h3 className="job">Full Stack Developer</h3>
-				<ul className="list">
+				<ul id = "list" className="list">
 				<li>Web Developer</li>
 				<li>Programmer</li>
 				<li>SoftWare Engineer</li>
-				</ul>
-			</div>
-			<div className="btnDiv">
+                </ul>
+            </div>
+			<div id="btnDiv" className="btnDiv">
 			<ButtonFilled text="Contact Me" scrollto="ContactMe" onClick={this.props.scrollToSection} />
 			<ButtonHollow text="About me" scrollto="AboutMe" onClick={this.props.scrollToSection} />
-			</div>
+            </div>
 			<div>
 			<PageHeading text="Follow Me" />
 			<FollowIcons />
-			</div>
-			</div>
-		)
-	}
+            </div>
+            </div>
+        )
+    }
 }
 
 

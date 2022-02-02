@@ -1,24 +1,21 @@
-.ContactMe{
-	min-height: 90vh;
-	width: 100vw;
-	height: auto;
-	background: #111a28;
-	display: flex;
-	flex-direction: column;
-	position: relative;
+.ContactMe {
+    width: 100vw;
+    height: auto;
+    background: #111a28;
+    display: flex;
+    flex-direction: column;
 }
-.MainContactMe{
-	min-height: 80vh;
-	height: auto;
-	width: 100vw;
-	border: 2px solid red;
+.MainContactMe {
+    height: auto;
+    width: 100vw;
+    border: 0px solid red;
 
 }
-.HeadingContactMe{
-	width: 100vw;
-	height: 10vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border: 0px solid red;
+.HeadingContactMe {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid red;
 }

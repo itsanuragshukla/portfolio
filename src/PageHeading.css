@@ -1,28 +1,41 @@
-.followDiv{
-	height: 10vmin;
-	width: 60vmin;
-	margin :0 auto;
-	padding: 0;
-	font-weight: 700;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.followDiv {
+    height: 60px;
+    min-width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.decoDiv{
-	width:25vmin ;
-	height: 0.5vmin;
-	background: white;
+.decoDiv {
+    width: 25%;
+    height: 5px;
+    background: white;
+    border-radius: 2.5px;
+    position: relative;
+
 }
-.decoMid{
-	height: 8vmin;
-	min-width: 20vmin;
-	width: auto;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: white;
-	background:#1d293a;
-	border-radius: 8px;
-	font-size: 3.5vmin;
-	
+.decoMid {
+    height: 40px;
+    min-width: 20%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: #1d293a;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    padding: 0 6px 0 6px;
+    z-index: 2;
+    box-shadow: 4px 4px 5px rgba(255,255,255,0.15),-4px 4px 5px rgba(255,255,255,0.15);
 }
+
+.decoLeft {
+    left: 3px;
+}
+.decoRight {
+    right: 3px;
+}
+.decoLeft,.decoRight {}

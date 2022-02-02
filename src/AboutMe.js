@@ -18,13 +18,13 @@ class AboutMe extends React.Component {
 					<PageHeading text="About Me" />
 			</div>
 				<div className="MainAboutMe">
-					<div className="imgAboutMe">
+					<div id="imgAboutMe" className="imgAboutMe">
 				</div>
 					<div className="textAboutMe">
 					{dummyText}<br />{dummyText2}
 				</div>
 			</div>
-			<div className="btnDivAboutMe">
+			<div id="btnDivAboutMe" className="btnDivAboutMe">
 			<ButtonFilled text="Contact Me" scrollto="ContactMe" onClick={this.props.scrollToSection} />
 			<ButtonHollow text="My Skills" scrollto="MySkills" onClick={this.props.scrollToSection} />
 			</div>

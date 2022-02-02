@@ -1,15 +1,15 @@
-.navBar{
+.navBar {
     position: fixed;
     top: 0;
     z-index: 3;
-    height: 8vh;
+    min-height: 65px;
     width: 100vw;
     transition: top 0.3s;
-background-color:#1d293a;
-display: flex;
-align-items: center;
+    background-color: #1d293a;
+    display: flex;
+    align-items: center;
 }
 
 .navbar-hidden {
-  top: -8vh;
+    top: -65px;
 }
