@@ -25,3 +25,20 @@
         font-size: 0.8rem;
     }
 }
+
+@keyframes bounce {
+    0% {}
+    50% {
+        top: -4px;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+.SkillMain:hover {
+    animation: bounce;
+    animation-iteration-count: 1;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in-out;
+}

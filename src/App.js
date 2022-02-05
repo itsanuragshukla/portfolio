@@ -5,7 +5,8 @@ import Intro from './Intro'
 import NavBar from './NavBar'
 import ContactMe from './ContactMe'
 import MySkills from './MySkills'
-
+import Projects from './Projects'
+import Footer from './Footer'
 class App extends React.Component {
 
 	constructor(props) {
@@ -30,8 +31,9 @@ class App extends React.Component {
 			</header>
 					<AboutMe scrollToSection={this.scrollToSection} />
 					<MySkills scrollToSection={this.scrollToSection} />
+					<Projects scrollToSection={this.scrollToSection}/>
 					<ContactMe scrollToSection={this.scrollToSection} />
-				
+				    <Footer/>
 			</div>
 			</div>
 		);

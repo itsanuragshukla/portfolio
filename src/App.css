@@ -10,7 +10,7 @@
     justify-content: center;
     font-size: 1rem;
     color: #000;
-    background-color: #111a28;
+    background-color: var(--blue);
     border: 0px solid red;
     padding-top: 50px;
     padding-bottom: 40px;

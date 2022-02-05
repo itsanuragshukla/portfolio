@@ -1,0 +1,20 @@
+.footerMain {
+    min-height: 60px;
+    height: auto;
+    width: 100%;
+    background: var(--light-blue);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.footerMain > h3 {
+    font-size: 1rem;
+    color: var(--green);
+}
+
+@media only screen and (max-width:768px){
+    .footerMain > h3 {
+        font-size: 0.9rem;
+    }
+}

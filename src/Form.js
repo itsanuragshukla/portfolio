@@ -7,14 +7,15 @@ class Form extends React.Component {
         this.state = {
             name: "",
             email: "",
-            message: "",
+            message: "Hello Anurag, ",
         }
         this.handleChange = this.handleChange.bind(this)
     }
 
     handleChange(e) {
+        const key = e.target.id != 'message' ? e.target.name: 'message';
         this.setState({
-            [e.target.name]: (e.target.value),
+            [key]: (e.target.value),
 
         }
         )
@@ -27,7 +28,7 @@ class Form extends React.Component {
 			<form className="form">
 			<input className="input" onChange={this.handleChange} type="Text" name="name" placeholder="Name" />
 			<input className="input" onChange={this.handleChange} type="email" name="email" placeholder="Email" />
-			<div contenteditable='true' onChange={this.handleChange} className=' input message' />
+			<div id="message" data-placeholder="Say Hello to Me" contentEditable='true' onChange={this.handleChange} className='input message' value={this.state.message} />
 			<ButtonHollow text="Submit" />
             </form>
             </div>

@@ -1,0 +1,62 @@
+.projectWrapper {
+    min-height: 150px;
+    height: auto;
+    width: 95%;
+    border: 0px solid green;
+    margin: 20px auto 0 auto;
+    border-radius: 0px 0px 0 0;
+    padding: 8px 8px;
+    text-align: left;
+    background: var(--light-blue);
+    max-width: 600px;
+}
+.projectInfo {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: auto;
+}
+.projectInfo > h1 {
+    min-height: 50px;
+    max-width: 95%;
+    font-size: 1.6rem;
+    font-weight: 300;
+    border: 0px solid green;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto 5px;
+}
+.projectInfo >p {
+    height: auto;
+    max-width: 95%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 130%;
+    margin: auto 5px;
+    padding: 5px 0;
+
+}
+.projectLinks {
+    height: 40px;
+    border: 0px solid green;
+}
+.projectLinks > div {
+    height: 40px;
+    justify-content: flex-start;
+    width: auto;
+    border: 0px solid green;
+}
+.projectTools {
+    min-height: 20px;
+    height: auto;
+}
+.projectTools > ul > li {
+    display: inline-block;
+    margin: 0 5px;
+    text-transform: capitalize;
+}
+
+.projectImg {
+    width: 100%;
+}

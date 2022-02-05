@@ -4,6 +4,7 @@
     background: #111a28;
     display: flex;
     flex-direction: column;
+    padding-top: 30px;
 }
 .MainContactMe {
     height: auto;

@@ -8,6 +8,7 @@ class ContactDetails extends React.Component {
     render() {
         return(<div className="contactDetails">
         <PageHeading text="Socials" />
+        <br/>
         <FollowIcons />
         <div className="btnDivContactMe">
         <ButtonFilled text="Email" />

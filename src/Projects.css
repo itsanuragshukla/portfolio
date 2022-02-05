@@ -1,0 +1,18 @@
+.projects {
+    height: auto;
+    width: 100vw;
+    background: var(--blue);
+    min-height: 200px;
+    border: 0px solid red;
+}
+
+.projectsMain {
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border: 0px solid red;
+}
