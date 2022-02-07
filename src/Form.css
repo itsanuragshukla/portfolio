@@ -37,7 +37,7 @@ form {
     min-height: 100px;
     overflow-wrap: break-word;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     word-break: break-word;
     display: flex;
     justify-content: center;
@@ -47,9 +47,18 @@ form {
 .message:empty::before {
   color: grey;
 }
+
 div[data-placeholder]:not([data-placeholder=""]):empty::before {
   content: attr(data-placeholder);
 }
 .message:empty::before {
   content: 'fallback placeholder';
+}
+
+.error{
+  height:auto;
+  color: red;
+  min-width: 150px;
+  width: 90%;
+  text-align: right;
 }

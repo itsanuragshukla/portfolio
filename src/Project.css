@@ -48,8 +48,10 @@
     border: 0px solid green;
 }
 .projectTools {
-    min-height: 20px;
+    min-height: 25px;
+    margin-top: 5px;
     height: auto;
+    font-weight: 300;
 }
 .projectTools > ul > li {
     display: inline-block;
@@ -59,4 +61,11 @@
 
 .projectImg {
     width: 100%;
+     transition-duration: 0.5s;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+.projectImg:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
 }

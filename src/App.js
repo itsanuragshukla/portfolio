@@ -24,7 +24,8 @@ class App extends React.Component {
 	render() {
 		return (
 			<div>
-				<NavBar />
+			{//<NavBar />
+			}
 				<div className="App">
     				<header className="App-header">
     					<Intro scrollToSection={this.scrollToSection} />

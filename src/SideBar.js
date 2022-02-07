@@ -1,17 +1,18 @@
 import React from 'react'
 import './SideBar.css'
 class SideBar extends React.Component {
-	constructor(props) {
-		super()
-	}
-	
-	render() {
-			return (
-				<div className= {this.props.visible ? 'sideBar visible' :'sideBar hidden'}>
-					I'm the sideBar
-				</div>
-			)
-	}
-	
+    constructor(props) {
+        super()
+    }
+
+    render() {
+        return (
+            <div className="sideBar">
+            <div className={this.props.visible ? 'wrapperNav visible': 'wrapperNav hidden'}>
+            </div>
+            </div>
+        )
+    }
+
 }
-	export default SideBar
+export default SideBar

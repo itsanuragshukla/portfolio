@@ -9,12 +9,13 @@ class WebSkills extends React.Component {
 		return (
 			this.props.visible ? <div>
 		<Skill skillName="HTML" progress="90" />
-				<Skill skillName="CSS" progress="60" />
-				<Skill skillName="PHP" progress="30" />
-				<Skill skillName="ReactJS" progress="60" />
+				<Skill skillName="CSS" progress="70" />
+				<Skill skillName="PHP" progress="40" />
+				<Skill skillName="ReactJS" progress="80" />
 				<Skill skillName="JQuery" progress="60" />
-				<Skill skillName="NodeJS" progress="50" />
-				<Skill skillName="ExpressJS" progress="40" />
+				<Skill skillName="NodeJS" progress="60" />
+				<Skill skillName="ExpressJS" progress="60" />
+				<Skill skillName="MongoDB" progress="40" />
 			</div>: ""
 		)
 	}

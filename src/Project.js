@@ -25,7 +25,7 @@ class Project extends React.Component {
                 {this.props.data.desc}
             </p>
             <div className="projectLinks">
-            <ProjectIcons />
+            <ProjectIcons data={this.props.data} />
             </div>
             <div className="projectTools">
             <ul>

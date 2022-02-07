@@ -10,8 +10,8 @@ class AboutMe extends React.Component {
 		this.state = {}
 	}
 	render() {
-		const dummyText = "Top Cat! The most effectual Top Cat! Who’s intellectual close friends get to call him T.C., providing it’s with dignity. Top Cat! The indisputable leader of the gang. He’s the boss, he’s a pip, he’s the championship. He’s the most tip top, Top Cat.";
-		const dummyText2 = "This is my boss, Jonathan Hart, a self-made millionaire, he’s quite a guy. This is Mrs H., she’s gorgeous, she’s one lady who knows how to take care of herself. By the way, my name is Max. I take care of both of them, which ain’t easy, ’cause when they met it was MURDER!";
+		const dummyText = "Hello! I'm Anurag Shukla, a passionate Software Developer. I develop Web and Android Applications. My core language is java and javascript. I like to develop softwares and tools by combining multiple tools available in programming world.";
+		const dummyText2 = "Currently, I'm pursuing by bachelors in Computer Science and Engineering from MMMUT, Gorakhpur, India. I'm still in the learning phase and trying to discover and learn new things. ";
 		return (
 			<div id='AboutMe' className="AboutMe">
 				<div className="HeadingAboutMe">
