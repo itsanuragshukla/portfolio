@@ -47,7 +47,7 @@ class Projects extends React.Component {
                 title: "Profile Card",
                 desc: "A profile card design to showcase your identity and all social handles at a single place, with a built-in contact form,through which anyone can communicate with you",
                 tools: ["HTML","CSS","JavaScript"],
-                img: "https://source.unsplash.com/random/?identity+card",
+                img: "https://source.unsplash.com/random/?social+media",
                 url: "https://itsanuragshukla.github.io/profilecard",
                 github: "https://github.com/itsanuragshukla/profileCard"
             },
@@ -56,7 +56,7 @@ class Projects extends React.Component {
                 title: "ChatNow - PHP chat app",
                 desc: "A chat application(web) , I created to learn PHP and file handling using PHP. This is a serverless realtime Chatting System, which uses text files to store and process chats. All the chat-data is encrypted using cryptoJS.",
                 tools: ["HTML","CSS","PHP","JavaScript","CryptoJS"],
-                img: "https://source.unsplash.com/random/?online+chat",
+                img: "https://source.unsplash.com/random/?web+development",
                 url: "https://chatnowjs.herokuapp.com",
                 github: "https://github.com/itsanuragshukla/chatnow"
             },]

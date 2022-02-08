@@ -72,9 +72,8 @@ class Form extends React.Component {
             	.then(response => {
                 	form.reset();
                 	msgDiv.innerText = "";
-                	this.setState({
-                	btnText: "SUBMIT"
-                	});}
+                	this.setState(this.oldState);
+		}
 		)
             	.catch(error => {
                 	this.setState({
@@ -85,6 +84,11 @@ class Form extends React.Component {
 
 	}
     }
+
+	componentDidMount(){
+		this.oldState = this.state;
+	}
+
     render() {
         return (
             <div className="formMain">
