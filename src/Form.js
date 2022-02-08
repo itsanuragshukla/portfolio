@@ -61,12 +61,10 @@ class Form extends React.Component {
         const form = document.forms['myForm'];
         const msgDiv = document.getElementById("message");
 
-        await this.validate("name");
-        await this.validate("email");
-	await this.validate("message");
-        if (!this.state.nameError && !this.state.emailError && !this.state.messageError) {
-
-            e.preventDefault();
+        this.validate("name");
+        this.validate("email");
+	this.validate("message");
+        if (!this.state.nameError || !this.state.emailError || !this.state.messageError) {
             this.setState({
                 btnText: "SENDING..."
             });
