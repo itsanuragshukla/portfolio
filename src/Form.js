@@ -14,7 +14,7 @@ class Form extends React.Component {
             messageError: false,
         }
         this.handleChange = this.handleChange.bind(this)
-        this.submit = this.submit.bind(this)
+        this.submitForm = this.submitForm.bind(this)
         this.validate = this.validate.bind(this);
     }
 
@@ -33,57 +33,57 @@ class Form extends React.Component {
         if (id == "email") {
             const atposition = this.state.email.indexOf("@");
             const dotposition = this.state.email.lastIndexOf(".");
-            const wrongEmail = (atposition < 1 || dotposition < atposition+2 || dotposition+2 >= this.state.email.length || this.state.email.length<=5);
+            const wrongEmail = (atposition < 1 || dotposition < atposition+2 || dotposition+2 >= this.state.email.length || this.state.email.length <= 5);
             this.setState({
-                emailError: wrongEmail? true: false,
+                emailError: wrongEmail,
             });
-        }
-        else if (id == "name") {
-            const wrongName = (this.state.name.replace(/\s/g, '').length == 0 || this.state.name.length<=2 );
+        } else if (id == "name") {
+            const wrongName = (this.state.name.replace(/\s/g, '').length == 0 || this.state.name.length <= 2);
             this.setState({
-                nameError: (wrongName ? true: false),
+                nameError: wrongName,
             });
-        }
-          else if (id == "message") {
-            const wrongMessage = (this.state.message.replace(/\s/g, '').length == 0 || this.state.message.length<2);
+        } else if (id == "message") {
+            const wrongMessage = (this.state.message.replace(/\s/g, '').length == 0 || this.state.message.length < 2);
 
             this.setState({
-                messageError: (wrongMessage ? true: false),
+                messageError:wrongMessage,
             });
         }
     }
 
 
 
-    submit = async (e) => {
+    submitForm = async (e) => {
         e.preventDefault();
         const scriptURL = "https://script.google.com/macros/s/AKfycbz33zpJ36WpMoD7uLAbXZTkXzSSklAcFOQIIFKX-GcQHYn6rUj-ugqEpPe3bZVoERkslg/exec";
         const form = document.forms['myForm'];
         const msgDiv = document.getElementById("message");
 
-        this.validate("name");
-        this.validate("email");
-	this.validate("message");
-        if (!this.state.nameError || !this.state.emailError || !this.state.messageError) {
+        await this.validate("name");
+        await this.validate("email");
+        await this.validate("message");
+        if (this.state.nameError || this.state.emailError || this.state.messageError) {}else{
             this.setState({
                 btnText: "SENDING..."
             });
-            fetch(scriptURL, {
-                method: 'POST', body: new FormData(form)})
-            .then(response => {
-                form.reset();
-                msgDiv.innerText = "";
-                this.setState({
-                    btnText: "SUBMIT"
-                });
-            })
-            .catch(error => {
-                this.setState({
-                    btnText: "SUBMIT"
-                });
-                alert("some error occoured while submitting the form, please try again later")
-            })
-        }
+            const data = new FormData(form);
+            data.append('message', msgDiv.innerText);
+            fetch(scriptURL, {method: 'POST', body: data})
+            	.then(response => {
+                	form.reset();
+                	msgDiv.innerText = "";
+                	this.setState({
+                	btnText: "SUBMIT"
+                	});}
+		)
+            	.catch(error => {
+                	this.setState({
+                	    btnText: "SUBMIT"
+                	});
+                	alert("some error occoured while submitting the form, please try again later")
+		})
+
+	}
     }
     render() {
         return (
@@ -104,7 +104,7 @@ invalid email
 invalid message
                 </div>
                 }
-			<ButtonHollow onClick={!this.state.nameError && this.state.emailError ?  this.submit:undefined} text={this.state.btnText} />
+			<ButtonHollow onClick={this.submitForm} text={this.state.btnText} />
             </form>
             </div>
         )
