@@ -12,8 +12,8 @@ class Projects extends React.Component {
                 desc: "This is a movie database designed and developed using reactJS in its core. This App uses TMDB API to fetch and display the data.",
                 tools: ["react","react-router","styled-component"],
                 img: "https://filmboard.mtu.edu/static/bucket/923aeb4a2b10f3e3cd793b3bde595df83c818cd5a4ea5d71486438f4b063c63ffa48fd6bc166ede140cd3d1f0a5e5c5db7388b63d1af96c9c69ebdce2c833acf.png",
-                url: "https://itsanuragshukla.github.io/tmdb",
-                github: "https://github.com/itsanuragshukla/tmdb"
+                url: "https://theanuragshukla.github.io/tmdb",
+                github: "https://github.com/theanuragshukla/tmdb"
             },
             {
                 id:"2",
@@ -22,7 +22,7 @@ class Projects extends React.Component {
                 tools: ["HTML","CSS","JavaScript","Jquery","GoogleAppsScript"],
                 img: "https://source.unsplash.com/random/?music",
                 url: "https://themusicplayer.herokuapp.com/",
-                github: "https://github.com/itsanuragshukla/music"
+                github: "https://github.com/theanuragshukla/music"
             },
             {
                 id:"3",
@@ -30,8 +30,8 @@ class Projects extends React.Component {
                 desc: "A simple Tic-Tac-Toe tac toe game, where opponent bot plays like a 2-years old",
                 tools: ["HTML","CSS","JavaScript"],
                 img:"https://images.unsplash.com/photo-1602632003094-0494b73b7c4a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-                url: "https://itsanuragshukla.github.io/ttt",
-                github: "https://github.com/itsanuragshukla/ttt"
+                url: "https://theanuragshukla.github.io/ttt",
+                github: "https://github.com/theanuragshukla/ttt"
             },
             {
                 id:"4",
@@ -39,8 +39,8 @@ class Projects extends React.Component {
                 desc: "A simple puzzle game, I developed to kill my boredom.",
                 tools: ["HTML","CSS","JavaScript"],
                 img: "https://source.unsplash.com/random/?puzzle",
-                url: "https://itsanuragshukla.github.io/15puzzle",
-                github: "https://github.com/itsanuragshukla/15puzzle"
+                url: "https://theanuragshukla.github.io/15puzzle",
+                github: "https://github.com/theanuragshukla/15puzzle"
             },
             {
                 id:"5",
@@ -48,8 +48,8 @@ class Projects extends React.Component {
                 desc: "A profile card design to showcase your identity and all social handles at a single place, with a built-in contact form,through which anyone can communicate with you",
                 tools: ["HTML","CSS","JavaScript"],
                 img: "https://source.unsplash.com/random/?social+media",
-                url: "https://itsanuragshukla.github.io/profilecard",
-                github: "https://github.com/itsanuragshukla/profileCard"
+                url: "https://theanuragshukla.github.io/profilecard",
+                github: "https://github.com/theanuragshukla/profileCard"
             },
             {
                 id:"6",
@@ -58,7 +58,7 @@ class Projects extends React.Component {
                 tools: ["HTML","CSS","PHP","JavaScript","CryptoJS"],
                 img: "https://source.unsplash.com/random/?web+development",
                 url: "https://chatnowjs.herokuapp.com",
-                github: "https://github.com/itsanuragshukla/chatnow"
+                github: "https://github.com/theanuragshukla/chatnow"
             },]
         }
     }
