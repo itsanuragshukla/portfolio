@@ -17,6 +17,7 @@ class WebSkills extends React.Component {
 				<Skill skillName="ExpressJS" progress="60" />
 				<Skill skillName="MongoDB" progress="40" />
 				<Skill skillName="Flask" progress="30" />
+				<Skill skillName="Django" progress="50" />
 			</div>: ""
 		)
 	}

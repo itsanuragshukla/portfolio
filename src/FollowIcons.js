@@ -8,7 +8,7 @@ class FollowIcons extends React.Component {
       linkdin:"https://www.linkedin.com/in/therealanuragshukla/",
       instagram:"https://instagram.com/therealanuragshukla",
       twitter:"https://www.twitter.com/itsanuragshukla/",
-      github:"https://github.com/itsanuragshukla/",
+      github:"https://github.com/theanuragshukla/",
       telegram:"https://t.me/therealanuragshukla",
     }
     this.redirect=this.redirect.bind(this);
