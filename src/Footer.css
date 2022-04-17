@@ -6,15 +6,23 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+	flex-direction: column;
 
 }
 .footerMain > h3 {
     font-size: 1.5rem;
     color: var(--green);
 }
-
+.footerMain > p {
+	font-size: 1rem;
+	color:var(--green);
+	font-variant-caps: all-small-caps;
+}
 @media only screen and (max-width:600px) {
     .footerMain > h3 {
         font-size: 1.1rem;
     }
+	.footerMain > p {
+		font-size: 0.8rem;
+	}
 }

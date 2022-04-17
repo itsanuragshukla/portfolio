@@ -18,7 +18,7 @@ class Projects extends React.Component {
             {
                 id:"2",
                 title: "Music Player",
-                desc: "A music player which is also a music library. It fetches the songs from GDrive using some cool GS tricks. Its my first ever project where I combined all my knowledge. ",
+                desc: "A music player which is also a music library. It fetches the songs from GDrive using some cool GS tricks. Its my first ever project where I interacted with a server/DataBase. ",
                 tools: ["HTML","CSS","JavaScript","Jquery","GoogleAppsScript"],
                 img: "https://source.unsplash.com/random/?music",
                 url: "https://themusicplayer.herokuapp.com/",
@@ -53,13 +53,23 @@ class Projects extends React.Component {
             },
             {
                 id:"6",
-                title: "ChatNow - PHP chat app",
-                desc: "A chat application(web) , I created to learn PHP and file handling using PHP. This is a serverless realtime Chatting System, which uses text files to store and process chats. All the chat-data is encrypted using cryptoJS.",
-                tools: ["HTML","CSS","PHP","JavaScript","CryptoJS"],
+                title: "ChatNow",
+                desc: "A chat application(web) , created using NodeJS and Socket.io. This is a realtime messaging System, which uses text files to store and process chats. All the chat-data is encrypted using cryptoJS.",
+                tools: ["HTML","CSS","NodeJS","JavaScript","CryptoJS","Socket.io"],
                 img: "https://source.unsplash.com/random/?web+development",
                 url: "https://chatnowjs.herokuapp.com",
-                github: "https://github.com/theanuragshukla/chatnow"
-            },]
+                github: "https://github.com/theanuragshukla/chatnowjs"
+            },
+				{
+					id:"6",
+					title:"LiveStreaming via BlockChain",
+					desc:"A LiveStreaming Platform built by using LivePeer API. This App allows users to start LiveStream and Share Camera and Screen with the World. This App communicates with Solidity SmartContract Deployed on Ethereum BlockChain using Web3JS.",
+					tools:["HTML","CSS","JavaScript","Solidity","Web3","NodeJS","Socket.io","Remix"],
+					img:"https://raw.githubusercontent.com/theanuragshukla/TheBizzzaire/main/19aec9c0-fa44-4e01-b65e-7bc9fbda5dbb.jpeg",
+					url:"https://livepeer.herokuapp.com",
+					github:"https://github.com/theanuragshukla/TheBizzzaire"
+				},
+			]
         }
     }
     render() {

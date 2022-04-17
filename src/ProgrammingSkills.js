@@ -13,6 +13,8 @@ class ProgrammingSkills extends React.Component {
 				<Skill skillName="C" progress="45" />
 				<Skill skillName="C++" progress="40" />
 				<Skill skillName="JavaScript" progress="75" />
+				<Skill skillName="Solidity" progress="75" />
+
 			</div>: ""
 		)
 	}
