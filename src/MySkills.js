@@ -1,11 +1,9 @@
 import React from 'react'
 import './MySkills.css'
 import PageHeading from './PageHeading'
-import ProgrammingSkills from './ProgrammingSkills'
 import ButtonHollow from './ButtonHollow'
 import ButtonFilled from './ButtonFilled'
-import WebSkills from './WebSkills'
-import OtherSkills from './OtherSkills'
+import Skill from './Skill'
 
 class MySkills extends React.Component {
 	constructor(props) {
@@ -14,6 +12,10 @@ class MySkills extends React.Component {
 			programming: true,
 			web: false,
 			other: false,
+			toShow:"programming",
+			skills:{
+				"length":0,
+			}		
 		}
 		this.toggleSection = this.toggleSection.bind(this)
 	}
@@ -25,13 +27,23 @@ class MySkills extends React.Component {
 				if (key == section) {
 					newStates[key] = true;
 				} else {
-					newStates[key] = false
+					newStates[key] = prevState[key]===true ? false: prevState[key]
 				}
 			}
+			newStates.toShow=section
 			return newStates
 
 		})}
-
+	componentDidMount=async ()=>{
+	await fetch("https://raw.githubusercontent.com/theanuragshukla/extras/main/skills.json")
+		.then(res=>res.json())
+			.then(res=>this.setState(prev=>{
+				const newState = prev
+				newState.skills=res
+				return newState
+			}))
+	
+	}
 
 	render() {
 		return (
@@ -46,10 +58,15 @@ class MySkills extends React.Component {
 			</div>
 			<div className="MainMySkills">
 				<div className="skillList">
-					<ProgrammingSkills visible={this.state.programming} />
-					<WebSkills visible={this.state.web} />
-					<OtherSkills visible={this.state.other} />
-				</div>
+<div>
+			{
+				this.state.skills.length > 0 ? this.state.skills[this.state.toShow].map(skill=>{
+
+					return <Skill key= {skill.title} skillName={skill.title} progress={skill.value}/>
+				})
+				: ""
+	}			</div>
+			</div>
 				<div className="btnDivAboutMe">
 			<ButtonFilled text="Contact Me" scrollto="ContactMe" onClick={this.props.scrollToSection} />
 			<ButtonHollow text="About me" scrollto="AboutMe" onClick={this.props.scrollToSection} />

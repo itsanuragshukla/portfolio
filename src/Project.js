@@ -30,7 +30,7 @@ class Project extends React.Component {
             <div className="projectTools">
             <ul>
                 {this.props.data.tools.map(tool => {
-                    return (<li>{tool}</li>)
+                    return (<li key={tool}>{tool}</li>)
                 })}
                 </ul>
             </div>
