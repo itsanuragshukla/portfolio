@@ -8,7 +8,7 @@
     justify-content: center;
     padding: 25px;
     margin: 30px auto 0 auto;
-    border-radius: 0px;
+    border-radius: 8px;
     max-width: 600px;
 }
 form {
@@ -21,7 +21,7 @@ form {
 .input {
     display: block;
     border: 2px solid #20bb45;
-    border-radius: 0px;
+    border-radius: 8px;
     min-width: 150px;
     width: 90%;
     min-height: 55px;

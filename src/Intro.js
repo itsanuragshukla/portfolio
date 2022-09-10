@@ -4,6 +4,7 @@ import PageHeading from './PageHeading'
 import ButtonFilled from './ButtonFilled'
 import ButtonHollow from './ButtonHollow'
 import FollowIcons from './FollowIcons'
+import {scrollToSection} from './utils'
 
 class Intro extends React.Component {
     constructor(props) {
@@ -11,7 +12,7 @@ class Intro extends React.Component {
     }
     render() {
         return (
-            <div className="introDiv">
+            <div id='Intro' className="introDiv">
 			<div>
 			<div className="helloDiv">
 Hello! I am
@@ -27,8 +28,8 @@ Hello! I am
                 </ul>
             </div>
 			<div id="btnDiv" className="btnDiv">
-			<ButtonFilled text="Contact Me" scrollto="ContactMe" onClick={this.props.scrollToSection} />
-			<ButtonHollow text="About me" scrollto="AboutMe" onClick={this.props.scrollToSection} />
+			<ButtonFilled text="My Projects" scrollto="Projects" onClick={scrollToSection} />
+			<ButtonHollow text="My Skills" scrollto="MySkills" onClick={scrollToSection} />
             </div>
 			<div>
 			<PageHeading text="Follow Me" />

@@ -10,12 +10,12 @@ class Projects extends React.Component {
         }
     }
 	componentDidMount=()=>{
-		fetch("https://raw.githubusercontent.com/theanuragshukla/extras/main/projects.json")
+		fetch("https://raw.githubusercontent.com/theanuragshukla/extras/main/portfolio/projects.json")
 		.then(res=>res.json())
 		.then(res=>this.setState(prev=>{return prev.projects=res}))
 	}
     render() {
-        return(<div className="projects">
+        return(<div id="Projects" className="projects">
         <PageHeading text="Projects" />
         <div className="projectsMain">
         {

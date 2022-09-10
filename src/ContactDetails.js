@@ -2,8 +2,9 @@ import React from 'react';
 import './ContactDetails.css';
 import PageHeading from './PageHeading'
 import FollowIcons from './FollowIcons'
-import ButtonHollow from './ButtonHollow'
-import ButtonFilled from './ButtonFilled'
+import Grid from './Grid'
+import GridElem from './GridElem'
+import {scrollToSection} from './utils';
 class ContactDetails extends React.Component {
   
   constructor(props){
@@ -18,11 +19,13 @@ class ContactDetails extends React.Component {
         <PageHeading text="Socials" />
         <br/>
         <FollowIcons />
-        <div className="btnDivContactMe">
-        <ButtonFilled onClick={()=>{this.redirect("mailto:www.anuragshukla@gmail.com")}} text="Email" />
-        <ButtonHollow onClick={()=>{this.redirect("https://www.LinkedIn.com/in/therealanuragshukla")}} text="LinkedIn" />
-        </div>
-        </div>
+			<Grid>
+			<GridElem text="Email" link="mailto:www.anuragshukla@gmail.com" />
+			<GridElem text="LinkedIn" link="https://www.LinkedIn.com/in/therealanuragshukla" />
+			<GridElem text="Back to Top" scrollTo="Root" onClick={scrollToSection}/>
+			</Grid>
+        
+		</div>
         );
     }
 }

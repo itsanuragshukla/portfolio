@@ -4,6 +4,7 @@ import PageHeading from './PageHeading'
 import ButtonHollow from './ButtonHollow'
 import ButtonFilled from './ButtonFilled'
 import Skill from './Skill'
+import {scrollToSection} from './utils'
 
 class MySkills extends React.Component {
 	constructor(props) {
@@ -35,7 +36,7 @@ class MySkills extends React.Component {
 
 		})}
 	componentDidMount=async ()=>{
-	await fetch("https://raw.githubusercontent.com/theanuragshukla/extras/main/skills.json")
+	await fetch("https://raw.githubusercontent.com/theanuragshukla/extras/main/portfolio/skills.json")
 		.then(res=>res.json())
 			.then(res=>this.setState(prev=>{
 				const newState = prev
@@ -68,8 +69,8 @@ class MySkills extends React.Component {
 	}			</div>
 			</div>
 				<div className="btnDivAboutMe">
-			<ButtonFilled text="Contact Me" scrollto="ContactMe" onClick={this.props.scrollToSection} />
-			<ButtonHollow text="About me" scrollto="AboutMe" onClick={this.props.scrollToSection} />
+			<ButtonFilled text="Contact Me" scrollto="ContactMe" onClick={scrollToSection} />
+			<ButtonHollow text="About me" scrollto="AboutMe" onClick={scrollToSection} />
 				</div>
 			</div>
 			</div>

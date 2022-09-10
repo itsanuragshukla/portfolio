@@ -3,6 +3,7 @@ import './AboutMe.css'
 import PageHeading from './PageHeading'
 import ButtonFilled from './ButtonFilled'
 import ButtonHollow from './ButtonHollow'
+import {scrollToSection} from './utils'
 
 class AboutMe extends React.Component {
 	constructor(props) {
@@ -25,8 +26,8 @@ class AboutMe extends React.Component {
 				</div>
 			</div>
 			<div id="btnDivAboutMe" className="btnDivAboutMe">
-			<ButtonFilled text="Contact Me" scrollto="ContactMe" onClick={this.props.scrollToSection} />
-			<ButtonHollow text="My Skills" scrollto="MySkills" onClick={this.props.scrollToSection} />
+			<ButtonFilled text="Contact Me" scrollto="ContactMe" onClick={scrollToSection} />
+			<ButtonHollow text="My Projects" scrollto="Projects" onClick={scrollToSection} />
 			</div>
 			</div>
 		)
