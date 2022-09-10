@@ -11,6 +11,8 @@
 	align-items: center;
 	font-size: 1.2rem ;
 	background-color: var(--blue);
+}
+.item {
 	border-width: 2px 0px 2px 0px;
 }
 .item:hover {
