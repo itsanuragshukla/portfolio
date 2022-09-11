@@ -2,14 +2,29 @@
     position: fixed;
     top: 0;
     z-index: 3;
-    min-height: 65px;
     width: 100vw;
     transition: top 0.3s;
     background-color: var(--light-blue);
     display: flex;
     align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+	height: 75px;
 }
 
 .navbar-hidden {
-    top: -65px;
+    top: -75px;
+}
+.navBar > .grid {
+	width: auto;
+	padding: 0;
+	margin: 0 10px 0 0;
+	min-height: 0;
+}
+.navBar > .grid * {
+	color: #fff;
+}
+.navBar>.grid>.gridElem .img {
+	margin: 0;
+	filter:brightness(0) saturate(100%) invert(100%);
 }

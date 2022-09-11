@@ -1,7 +1,10 @@
 import React, {
 } from 'react'
-import './NavBar.css'
 import Ham from './HamBurger'
+import Grid from './Grid'
+import GridElem from './GridElem'
+import './NavBar.css'
+import a from './img/a.svg'
 
 class NavBar extends React.Component {
     constructor(props) {
@@ -37,8 +40,11 @@ class NavBar extends React.Component {
         }
         return(
             <div id="nav" style={style} className={this.state.visible ? "navBar": "navBar navbar-hidden"}>
-        <Ham visible={this.state.visible} />
-            </div>
+        <Ham visible={this.state.visible} />	<Grid>
+			<GridElem text="nurag" img={a}/>
+			</Grid>
+     
+	       </div>
         )
     }
 }

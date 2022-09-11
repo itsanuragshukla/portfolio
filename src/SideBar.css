@@ -13,6 +13,8 @@
     color: white;
     flex-direction: column;
     height: auto;
+	max-height:calc(100vh - 75px) ;
+	overflow-y: scroll;
 }
 .wrapperNav {
     border: 0px solid;
