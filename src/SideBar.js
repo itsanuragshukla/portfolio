@@ -24,7 +24,7 @@ class SideBar extends React.Component {
 			{
 				this.state.items.map(data=>{
 					return (
-					<GridElem scrollTo={data.scrollTo} onClick={scrollToSection} text={data.text} link={data.link} img={data.img} heading={data.heading} blank={data.blank} />
+					<GridElem scrollTo={data.scrollTo} onClick={data.scrollTo && scrollToSection} text={data.text} link={data.link} img={data.img} heading={data.heading} blank={data.blank} />
 					)
 				})
 			}
